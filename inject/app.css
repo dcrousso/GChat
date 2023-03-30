@@ -1,0 +1,26 @@
+.gb_Jd {
+	-webkit-app-region: drag;
+}
+
+.gb_Jd .gb_Ic,
+.gb_Jd .gb_ye,
+.gb_Jd .Yb,
+.gb_Jd .zo,
+.gb_Jd .FI,
+.gb_Jd .gb_gf {
+	-webkit-app-region: no-drag;
+}
+
+.gb_ad {
+	min-width: unset !important;
+	margin-left: 75px !important;
+	padding-right: 0 !important;
+}
+
+.gb_Ac {
+	display: none !important;
+}
+
+.gb_ye {
+	max-width: unset !important;
+}

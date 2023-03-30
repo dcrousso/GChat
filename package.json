@@ -1,0 +1,44 @@
+{
+	"name": "GChat",
+	"productName": "GChat",
+	"version": "1.0.0",
+	"description": "Unofficial GChat App",
+	"scripts": {
+		"start": "electron .",
+		"build": "npm run build-darwin && npm run build-win32 && npm run build-linux",
+		"build-darwin": "electron-packager --platform=darwin --arch=universal  --icon=assets/Icon.icns --app-bundle-id=com.dcrousso.GChat                    --app-version=$npm_package_version --sign=\"Developer ID Application: Devin Rousso (Q5M4T22BE9)\" --overwrite --asar --out=dist --ignore=\"^/dist$\" --ignore=\"^/media$\" --prune .",
+		"build-win32":  "electron-packager --platform=win32  --arch=ia32       --icon=assets/Icon.ico  --app-bundle-id=com.dcrousso.GChat                    --app-version=$npm_package_version                                                                --overwrite --asar --out=dist --ignore=\"^/dist$\" --ignore=\"^/media$\" --prune .",
+		"build-linux":  "electron-packager --platform=linux  --arch=x64        --icon=assets/Icon.icns --version-string.ProductName=$npm_package_productName --app-version=$npm_package_version                                                                --overwrite --asar --out=dist --ignore=\"^/dist$\" --ignore=\"^/media$\" --prune ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dcrousso/GChat.git"
+	},
+	"keywords": [
+		"Google Chat",
+		"GoogleChat",
+		"Google",
+		"GChat",
+		"chat",
+		"messaging",
+		"social"
+	],
+	"author": {
+		"name": "Devin Rousso",
+		"email": "hi@devinrousso.com",
+		"url": "http://devinrousso.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dcrousso/GChat/issues"
+	},
+	"homepage": "https://github.com/dcrousso/GChat#readme",
+	"devDependencies": {
+		"electron": "23.2.0",
+		"electron-debug": "3.2.0",
+		"electron-packager": "17.1.1"
+	},
+	"dependencies": {
+		"electron-dl": "3.5.0"
+	}
+}
