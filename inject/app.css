@@ -1,26 +1,52 @@
-.gb_Jd {
+/* header */
+#gb {
 	-webkit-app-region: drag;
 }
 
-.gb_Jd .gb_Ic,
-.gb_Jd .gb_ye,
-.gb_Jd .Yb,
-.gb_Jd .zo,
-.gb_Jd .FI,
-.gb_Jd .gb_gf {
-	-webkit-app-region: no-drag;
-}
-
-.gb_ad {
+/* hamburger container */
+.gb_ed {
 	min-width: unset !important;
 	margin-left: 75px !important;
 	padding-right: 0 !important;
 }
 
-.gb_Ac {
+/* hamburger */
+.gb_Mc {
+	-webkit-app-region: no-drag;
+}
+
+/* logo */
+.gb_Ec {
 	display: none !important;
 }
 
-.gb_ye {
+/* search form container */
+.gb_He {
+	padding-left: 5px !important;
+}
+
+/* search form */
+.gb_2d {
 	max-width: unset !important;
+	-webkit-app-region: no-drag;
+}
+
+/* online status */
+.Yb {
+	-webkit-app-region: no-drag;
+}
+
+/* support */
+.zo {
+	-webkit-app-region: no-drag;
+}
+
+/* settings */
+.FI {
+	-webkit-app-region: no-drag;
+}
+
+/* apps, profile */
+.gb_g {
+	-webkit-app-region: no-drag;
 }
